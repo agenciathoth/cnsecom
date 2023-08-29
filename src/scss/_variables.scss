@@ -1,0 +1,74 @@
+@use "sass:math";
+
+$container-size: 1216px;
+$container-padding: 15px;
+
+$primary: #0c4995;
+$primary-dark: #01165b;
+$secondary: #ffde00;
+$tertiary: #298c35;
+
+@function rem($px, $context: 16) {
+  @return math.div($px, $context) + rem;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: rem(36);
+  height: rem(36);
+
+  background-color: #fff;
+
+  font-size: 0;
+
+  border-radius: 50%;
+
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  svg {
+    font-size: rem(22);
+  }
+
+  &.facebook {
+    color: #395185;
+  }
+
+  &.instagram {
+    color: #db4d7d;
+  }
+
+  &.twitter {
+    color: #169df1;
+  }
+
+  &.whatsapp {
+    color: #2bb200;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: rem(8);
+
+  padding: rem(8) rem(16);
+
+  font-weight: 700;
+  font-size: rem(16);
+
+  background-color: #fff;
+  color: $primary;
+
+  border-radius: rem(30);
+}
