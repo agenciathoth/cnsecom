@@ -84,7 +84,7 @@
 
 // HERO
 .s-hero {
-  background-image: url(../img/hero-bg.png);
+  background-image: url(../img/hero-bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -224,6 +224,32 @@
     background-color: rgba($color: #fff, $alpha: 0.54);
 
     border-radius: 20px;
+  }
+
+  ul,
+  ol {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+
+    padding-left: 60px;
+  }
+
+  ul li::before {
+    content: "-";
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    * {
+      text-align: center;
+    }
   }
 }
 
