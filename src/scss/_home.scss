@@ -350,6 +350,11 @@ footer {
 
   .content-header {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content-header-shareButtons {
+    margin-left: auto;
   }
 }
 
