@@ -1,3 +1,7 @@
 const contentSection = document.querySelector(".s-content");
 
-contentSection.scrollIntoView({ behavior: "smooth" });
+const { hash } = window.location;
+
+if (hash) {
+  contentSection.scrollIntoView({ behavior: "smooth" });
+}
